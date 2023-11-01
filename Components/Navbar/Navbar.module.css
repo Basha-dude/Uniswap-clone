@@ -1,32 +1,32 @@
-.Navbar{
+.NavBar{
     width: 90%;
    margin: 2rem auto; 
 }
 
-.Navbar_box{
+.NavBar_box{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
 }
-.Navbar_box_left{
+.NavBar_box_left{
     display: flex;
     gap: 4rem;
     align-items: center;
 
 }
-.Navbar_box_left_menu{
+.NavBar_box_left_menu{
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-.Navbar_box_left_menu_item{
+.NavBar_box_left_menu_item{
     font-size: 1.2rem;
     color: #cff80b;
     
 }
-.Navbar_box_middle{
+.NavBar_box_middle{
     background-color: #1e1e1e;
     width: 80%;
     padding: 1rem 1.5rem;
@@ -34,21 +34,22 @@
     margin: 0 auto;
     
 }
-.Navbar_box_middle_search{
+.NavBar_box_middle_search{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 0rem;
     gap: 2rem;
     cursor: pointer;
 }
-.Navbar_box_middle input {
+.NavBar_box_middle input {
     background-color: transparent;
     outline: none;
     border: none;
     font-size: 1rem;
     color: #cff80b;
 }
-.Navbar_box_right{
+.NavBar_box_right{
     display: flex;
     align-items: center;
     justify-content: end;
@@ -69,7 +70,7 @@
     line-height: 0;
     color: #cff80b;
 }
-.Navbar_box_right_box button{
+.NavBar_box_right_box button{
     background-color: #1e1e1e;
     border: none; 
     outline: none;
@@ -82,5 +83,24 @@
     align-items: center;
     gap: 1rem;
     
+    
+}
+
+@media only screen  and (max-width :35em){
+    .NavBar{
+        width: 90%;
+    }
+    .NavBar_box{
+        grid-template-columns:.5fr 1fr ;
+    }
+    .NavBar_box_middle {
+        display: none;
+    }
+    .NavBar_box_left_menu {
+        display: none;
+    }
+    .NavBar_box_right_box {
+        display: none;
+    }
     
 }
